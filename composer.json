@@ -1,0 +1,23 @@
+{
+    "name": "jumoshen/ding-bot",
+    "description": "Send message to dingding`s group chat",
+    "type": "library",
+    "require": {
+        "php":">=5.3",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "^6.3",
+        "phpunit/phpunit": "~4.0"
+    },
+    "authors": [
+        {
+            "name": "Jumoshen",
+            "email": "1173240549@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"DingBot\\": "src"}
+    },
+    "minimum-stability": "dev"
+}
