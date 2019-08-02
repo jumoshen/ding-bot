@@ -8,20 +8,23 @@ Send message to dingding`s group chat
 
 安装
 
-``
-shell
+```shell
 composer require jumoshen/ding-bot:^0.1
-``
+```
 
 使用
 
-```
-text文本
+```php
+<?php
+use DingBot\Services\DingBotService;
+use Psr\Http\Message\MessageInterface;
+
+#text文本
 (new DingBotService('your access_token'))->text('这是个测试', [], function(MessageInterface $result){
     # do your callback
 });
 
-markdown
+#markdown
 (new DingBotService(''))->markdown('- title', [], function(MessageInterface $result){
     # do your callback
 });
